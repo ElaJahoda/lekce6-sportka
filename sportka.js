@@ -8,8 +8,8 @@
 
 let osudi = [];
 
-for (let i = 1; i <= 48; i = i + 1) {
-    // Máš osudí čísel od 1 do 48
+for (let i = 1; i <= 49; i = i + 1) {
+    // Máš osudí čísel od 1 do 49
     osudi.push(i);
 }
 
