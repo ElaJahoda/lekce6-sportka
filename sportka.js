@@ -5,7 +5,7 @@
 // <span class="cislo">8</span>
 // ... který pak přidej dovnitř prvku :
 
-
+let vyherniCisla = document.querySelector('#vyherni-cisla');
 let osudi = [];
 
 for (let i = 1; i <= 49; i = i + 1) {
@@ -17,7 +17,7 @@ for (let i = 1; i <= 49; i = i + 1) {
 let tazenaCisla = [];
 
 for (let i = 0; i < 7; i++) {
-    let vyherniIndex = Math.floor(Math.random() * osudi.length;
+    let vyherniIndex = Math.floor(Math.random() * osudi.length);
     let vyherniCislo = osudi[vyherniCislo];
 // Žádné číslo se nesmí v tahu opakovat (je vyjmuté z osudí, takže už ho nemůžeš znovu vylosovat)
     tazenaCisla.push(vyherniCislo);
@@ -25,7 +25,7 @@ for (let i = 0; i < 7; i++) {
 }
 
 // Z každého vylosovaného čísla vygeneruj následující HTML kód: ...
-let vyherniCisla = document.querySelector('#vyherni-cisla');
+
 
 for (let j = 0; j < tazenaCisla.length; j++) {
     vyherniCisla.innerHTML += '<span class="cislo">' + tazenaCisla[j] + '</span>';
