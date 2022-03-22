@@ -1,9 +1,9 @@
 // Udělej losování klasické Sportky
 
 
-// Z každého vylosovaného čísla vygeneruj následující HTML kód:
+
 // <span class="cislo">8</span>
-// ... který pak přidej dovnitř prvku <div id="vyherni-cisla">:
+// ... který pak přidej dovnitř prvku :
 
 
 let osudi = [];
@@ -22,4 +22,11 @@ for (let i = 0; i < 7; i++) {
 // Žádné číslo se nesmí v tahu opakovat (je vyjmuté z osudí, takže už ho nemůžeš znovu vylosovat)
     tazenaCisla.push(vyherniCislo);
     osudi.splice(vyherniIndex, 1);
+}
+
+// Z každého vylosovaného čísla vygeneruj následující HTML kód: ...
+let vyherniCisla = document.querySelector('#vyherni-cisla');
+
+for (let j = 0; j < tazenaCisla.length; j++) {
+    vyherniCisla.innerHTML += '<span class="cislo">' + tazenaCisla[j] + '</span>';
 }
