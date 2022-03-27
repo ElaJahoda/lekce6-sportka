@@ -43,7 +43,7 @@ let i = setInterval(function(){
             clearInterval(i);
             x = 1;
         }
-    }, 200);
+    }, 2000);
 
 }
 
