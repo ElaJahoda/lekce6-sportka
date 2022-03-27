@@ -26,6 +26,14 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	margin-top: 0;
+	font-size: 40px;
+	color: white;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
 .cislo {
 	position: relative;
 	display: inline-block;
@@ -66,4 +74,20 @@ h1 {
 	filter: blur(35px);
 	transform: scale(0.8, 0.25);
 	opacity: 0.4;
+}
+
+#tlacitko {
+	text-align: center;
+	position: relative; 
+	margin-left: -50px;
+	left:50%;
+	font-size: 40px;
+	color: rgb(76, 59, 133);
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 15%;
+}
+
+#tlacitko:hover {
+	color: rgb(5, 3, 8);
+	text-shadow: 0 4px 10px rgb(183, 36, 202);
 }
